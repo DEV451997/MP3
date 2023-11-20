@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Collection</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>Car Collection 2</h2>
+
     {% for stat in stats %}
         {{ stat.category_name }}<br>
         {{ stat.manufacturer }}<br>
@@ -13,5 +10,5 @@
         {{ stat.engine }}<br>
         {{ stat.horsepower }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
