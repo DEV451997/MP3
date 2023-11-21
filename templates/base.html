@@ -22,7 +22,7 @@
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('get_stats') }}">Home</a></li>
 					<li><a href="#">Add Car</a></li>
-					<li><a href="#">Manage Categories</a></li>
+					<li><a href="{{ url_for('profile', username=session['user']) }}">User Profile</a></li>
 					<li><a href="#">Log Out</a></li>
 					<li><a href="{{ url_for('login') }}">Log In</a></li>
 					<li><a href="{{ url_for('register') }}">Register</a></li>
@@ -35,7 +35,7 @@
             <li><h4 class="center-align teal-text text-darken-4">Car Hub</h4></li>
             <li><a href="{{ url_for('get_stats') }}">Home</a></li>
             <li><a href="#">Add Car</a></li>
-            <li><a href="#">Manage Categories</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">User Profile</a></li>
             <li><a href="#">Log Out</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
