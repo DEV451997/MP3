@@ -93,8 +93,23 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_car")
+
+@app.route("/add_car", methods=["GET", "POST"])
 def add_car():
+    if request.method == "POST":
+        car = {
+            "category_name": request.form.get("category_name"),
+            "manufacturer": request.form.get("manufacturer"),
+            "model": request.form.get("model"),
+            "engine": request.form.get("engine"),
+            "horsepower": request.form.get("horsepower"),
+            "image_url": request.form.get("image_url"),
+        }
+        mongo.db.stats.insert_one(car)
+        flash("Car Successfully Added")
+        return redirect(url_for("get_stats"))
+
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_car.html", categories=categories)
 
