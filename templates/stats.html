@@ -1,22 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="row">
+  <div class="col s12 m6">
     <div class="card">
-        {% for stat in stats %}
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ stat.image_url }}">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">{{ stat.category_name }}<i class="fas fa-bars right"></i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">{{ stat.category_name }}<i class="fas fa-times right"></i></span>
-          <p>{{ stat.manufacturer }}</p>
-          <p>{{ stat.model }}</p>
-          <p>{{ stat.engine }}</p>
-          <p>{{ stat.horsepower }}</p>
-        </div>
-        {% endfor %}
+      {% for stat in stats %}
+      <div class="card-image">
+        <img src="{{ stat.image_url }}">
+        <span class="card-title">{{ stat.category_name }}</span>
       </div>
+      <div class="card-content">
+        <p>{{ stat.manufacturer }}</p>
+        <p>{{ stat.model }}</p>
+        <p>{{ stat.engine }}</p>
+        <p>{{ stat.horsepower }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
 
 {% endblock %}
