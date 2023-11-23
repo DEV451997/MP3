@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_stats")
 def get_stats():
-    stats = mongo.db.stats.find()
+    stats = list(mongo.db.stats.find())
     return render_template("stats.html", stats=stats)
 
 @app.route("/register", methods=["GET", "POST"])

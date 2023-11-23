@@ -1,25 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for stat in stats %}
-        {{ stat.category_name }}<br>
-        {{ stat.manufacturer }}<br>
-        {{ stat.model }}<br>
-        {{ stat.engine }}<br>
-        {{ stat.horsepower }}<br>
-    {% endfor %}
-
     <div class="card">
+        {% for stat in stats %}
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="images/office.jpg">
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="fas fa-bars right"></i></span>
+          <span class="card-title activator grey-text text-darken-4">{{ stat.category_name }}<i class="fas fa-bars right"></i></span>
         </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="fas fa-times right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <span class="card-title grey-text text-darken-4">{{ stat.category_name }}<i class="fas fa-times right"></i></span>
+          <p>{{ stat.manufacturer }}</p>
+          <p>{{ stat.model }}</p>
+          <p>{{ stat.engine }}</p>
+          <p>{{ stat.horsepower }}</p>
         </div>
+        {% endfor %}
       </div>
 
 {% endblock %}
