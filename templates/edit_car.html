@@ -11,9 +11,13 @@
             <div class="input-field col s12">
                 <select id="category_name" name="category_name" class="validate" required>
                   <option value="" disabled selected>Select car category</option>
-                  {% for category in categories %}
-                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                    {% endfor %}
+                {% for category in categories %}
+                    {% if category.category_name == stat.category_name %}
+                      <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                    {% else %}
+                      <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    {% endif %}
+                {% endfor %}
                 </select>
                 <label for="category_name">Car Category</label>
               </div>
@@ -21,35 +25,35 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-image prefix teal-text text-darken-4"></i>
-                <input id="image_url" name="image_url" type="text" class="validate" required>
+                <input id="image_url" name="image_url" value="{{ stat.image_url }}" type="text" class="validate" required>
                 <label for="image_url">Image URL</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-circle prefix teal-text text-darken-4"></i>
-                <input id="manufacturer" name="manufacturer" type="text" class="validate" required>
+                <input id="manufacturer" name="manufacturer" value="{{ stat.manufacturer }}" type="text" class="validate" required>
                 <label for="manufacturer">Manufacturer</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-car prefix teal-text text-darken-4"></i>
-                <input id="model" name="model" type="text" class="validate" required>
+                <input id="model" name="model" value="{{ stat.model }}" type="text" class="validate" required>
                 <label for="model">Model</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-cogs prefix teal-text text-darken-4"></i>
-                <input id="engine" name="engine" type="text" class="validate" required>
+                <input id="engine" name="engine" value="{{ stat.engine }}" type="text" class="validate" required>
                 <label for="engine">Engine Size</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-horse-head prefix teal-text text-darken-4"></i>
-                <input id="horsepower" name="horsepower" type="text" class="validate" required>
+                <input id="horsepower" name="horsepower" value="{{ stat.horsepower }}" type="text" class="validate" required>
                 <label for="horsepower">Horsepower</label>
             </div>
         </div>
@@ -58,6 +62,9 @@
                 <button type="submit" class="btn-large teal darken-1 text-shadow">
                     Edit Car 
                 </button>
+                <a href="{{ url_for('get_stats') }}" class="btn-large red text-shadow">
+                    Cancel 
+                </a>
             </div>
         </div>
     </form>
