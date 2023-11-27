@@ -114,6 +114,15 @@ def add_car():
     return render_template("add_car.html", categories=categories)
 
 
+@app.route("/edit_car/<stats_id>", methods=["GET", "POST"])
+def edit_car(stats_id):
+    
+    stats_id_obj = ObjectId(stats_id)
+    stat = mongo.db.stats.find_one({"_id": stats_id_obj})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_car.html", stat=stat, categories=categories)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
