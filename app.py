@@ -116,6 +116,18 @@ def add_car():
 
 @app.route("/edit_car/<stats_id>", methods=["GET", "POST"])
 def edit_car(stats_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "manufacturer": request.form.get("manufacturer"),
+            "model": request.form.get("model"),
+            "engine": request.form.get("engine"),
+            "horsepower": request.form.get("horsepower"),
+            "image_url": request.form.get("image_url"),
+        }
+        mongo.db.stats.update_one({"_id": ObjectId(stats_id)}, {"$set": submit})
+        flash("Car Successfully Updated")
+        
     
     stats_id_obj = ObjectId(stats_id)
     stat = mongo.db.stats.find_one({"_id": stats_id_obj})
