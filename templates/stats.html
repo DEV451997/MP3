@@ -10,13 +10,16 @@
         <span class="card-title">{{ stat.category_name }}</span>
       </div>
       <div class="card-content">
-        <p>{{ stat.manufacturer }}</p>
-        <p>{{ stat.model }}</p>
-        <p>{{ stat.engine }}</p>
-        <p>{{ stat.horsepower }}</p>
+        <p>Manufacturer: {{ stat.manufacturer }}</p>
+        <p>Model: {{ stat.model }}</p>
+        <p>Engine size: {{ stat.engine }}</p>
+        <p>BHP: {{ stat.horsepower }}</p>
+        <p>Created by: {{ stat.created_by }}</p>
         <div>
-        <a href="{{ url_for('edit_car', stats_id=stat._id) }}" class="btn-small teal darken-4">Edit</a>
-        <a href="" class="btn-small red accent-4">Delete</a>
+        {% if session.user is defined and session.user|lower == stat.created_by|lower %}
+          <a href="{{ url_for('edit_car', stats_id=stat._id) }}" class="btn-small teal darken-4">Edit</a>
+          <a href="" class="btn-small red accent-4">Delete</a>
+        {% endif %}
       </div>
       </div>
       {% endfor %}

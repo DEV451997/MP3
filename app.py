@@ -104,6 +104,7 @@ def add_car():
             "engine": request.form.get("engine"),
             "horsepower": request.form.get("horsepower"),
             "image_url": request.form.get("image_url"),
+            "created_by": session.get("user")
         }
         mongo.db.stats.insert_one(car)
         flash("Car Successfully Added")
