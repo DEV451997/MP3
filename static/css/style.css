@@ -5,3 +5,8 @@
 .flashes h4 {
     line-height: 2;
 }
+
+.toggle-password {
+    padding: 5px;
+    margin-top: 5px;
+}
