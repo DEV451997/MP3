@@ -135,6 +135,12 @@ def edit_car(stats_id):
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_car.html", stat=stat, categories=categories)
 
+@app.route("/delete_car/<stats_id>")
+def delete_car(stats_id):
+    mongo.db.stats.delete_one({"_id": ObjectId(stats_id)})
+    flash("Car Successfully Deleted")
+    return redirect(url_for("get_stats"))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
