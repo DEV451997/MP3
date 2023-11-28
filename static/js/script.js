@@ -19,3 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+$(document).ready(function(){
+    $('.modal').modal();
+  });
