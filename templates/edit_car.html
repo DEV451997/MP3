@@ -62,7 +62,7 @@
                 <button type="submit" class="btn-large teal darken-4 text-shadow">
                     Edit Car 
                 </button>
-                <a href="{{ url_for('get_stats') }}" class="btn-large red accent-4 text-shadow">
+                <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large red accent-4 text-shadow">
                     Cancel 
                 </a>
             </div>
