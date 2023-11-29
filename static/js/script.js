@@ -1,13 +1,15 @@
 $(document).ready(function () {
-    $(".sidenav").sidenav({edge: "right"});
+    $(".sidenav").sidenav({
+        edge: "right"
+    });
     $('select').formSelect();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     const passwordInput = $('#password');
     const togglePassword = $('.toggle-password');
 
-    togglePassword.click(function() {
+    togglePassword.click(function () {
         if (passwordInput.attr('type') === 'password') {
             passwordInput.attr('type', 'text');
             togglePassword.removeClass('fa-eye');
@@ -20,6 +22,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.modal').modal();
-  });
+});
