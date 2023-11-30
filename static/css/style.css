@@ -14,7 +14,7 @@
 /* Ensure images within .card have a width of 100% and maintain aspect ratio */
 .card img {
     width: 100%;
-    height: auto;
+    height: 300px;
 }
 /* Padding for all <i> elements */
 i {
