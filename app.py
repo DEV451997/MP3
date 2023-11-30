@@ -18,6 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Home page and stats route
 @app.route("/")
 @app.route("/get_stats")
 def get_stats():
@@ -25,6 +26,7 @@ def get_stats():
     return render_template("stats.html", stats=stats)
 
 
+# User registration route
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -47,6 +49,7 @@ def register():
     return render_template("register.html")
 
 
+# User login route
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -76,17 +79,20 @@ def login():
     return render_template("login.html")
 
 
+# User profile route
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    
+
     user_stats = list(mongo.db.stats.find({"created_by": session["user"]}))
-    
+
     if session.get("user"):
-        return render_template("profile.html", username=username, user_stats=user_stats)
+        return render_template("profile.html",
+                               username=username, user_stats=user_stats)
 
     return redirect(url_for("login"))
 
 
+# User logout route
 @app.route("/logout")
 def logout():
 
@@ -95,6 +101,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add car route
 @app.route("/add_car", methods=["GET", "POST"])
 def add_car():
     if request.method == "POST":
@@ -115,6 +122,7 @@ def add_car():
     return render_template("add_car.html", categories=categories)
 
 
+# Edit car route
 @app.route("/edit_car/<stats_id>", methods=["GET", "POST"])
 def edit_car(stats_id):
     if request.method == "POST":
@@ -136,6 +144,7 @@ def edit_car(stats_id):
     return render_template("edit_car.html", stat=stat, categories=categories)
 
 
+# Delete car route
 @app.route("/delete_car/<stats_id>")
 def delete_car(stats_id):
     mongo.db.stats.delete_one({"_id": ObjectId(stats_id)})
@@ -143,6 +152,7 @@ def delete_car(stats_id):
     return redirect(url_for("get_stats"))
 
 
+# Run the app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
