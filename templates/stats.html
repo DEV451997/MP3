@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Page Header -->
 <h3 class="center-align teal-text text-darken-4">
   The Hub
 </h3>
 
+<!-- Car Stats Display Section -->
 <div class="row">
-      {% for stat in stats %}
-      <div class="col s12 m6">
-        <div class="card">
+  <!-- Loop through each car stat -->
+  {% for stat in stats %}
+  <div class="col s12 m6">
+    <!-- Card for each car stat -->
+    <div class="card">
       <div class="card-image">
         <img src="{{ stat.image_url }}">
         <span class="card-title">{{ stat.category_name }}</span>
@@ -18,11 +22,11 @@
         <p>Model: {{ stat.model }}</p>
         <p>Engine size: {{ stat.engine }}</p>
         <p>BHP: {{ stat.horsepower }}</p>
-        <p>Created by: {{ stat.created_by }}</p> 
+        <p>Created by: {{ stat.created_by }}</p>
       </div>
     </div>
   </div>
-      {% endfor %}
+  {% endfor %}
 </div>
 
 

@@ -1,21 +1,22 @@
+/* Add text shadow to elements with class .text-shadow */
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
+/* Adjust line height for h4 elements within .flashes */
 .flashes h4 {
     line-height: 2;
 }
-
+/* Styling for the password toggle icon */
 .toggle-password {
     padding: 5px;
     margin-top: 5px;
 }
-
+/* Ensure images within .card have a width of 100% and maintain aspect ratio */
 .card img {
-    width: 100%; 
-    height: auto; 
-  }
-
+    width: 100%;
+    height: auto;
+}
+/* Padding for all <i> elements */
 i {
     padding: 5px;
 }

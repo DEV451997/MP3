@@ -1,41 +1,49 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Page header -->
 <h3 class="center-align teal-text text-darken-4">
     Edit Car
 </h3>
 
 <div class="row">
-    <form class="col s12" method="POST"  action="{{ url_for('edit_car', stats_id=stat._id) }}">
+    <!-- Edit car form -->
+    <form class="col s12" method="POST" action="{{ url_for('edit_car', stats_id=stat._id) }}">
+        <!-- Car category dropdown -->
         <div class="row">
             <div class="input-field col s12">
                 <select id="category_name" name="category_name" class="validate" required>
-                  <option value="" disabled selected>Select car category</option>
-                {% for category in categories %}
+                    <option value="" disabled selected>Select car category</option>
+                    {% for category in categories %}
                     {% if category.category_name == stat.category_name %}
-                      <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
                     {% else %}
-                      <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                     {% endif %}
-                {% endfor %}
+                    {% endfor %}
                 </select>
                 <label for="category_name">Car Category</label>
-              </div>
+            </div>
         </div>
+        <!-- Image URL input -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-image prefix teal-text text-darken-4"></i>
-                <input id="image_url" name="image_url" value="{{ stat.image_url }}" type="text" class="validate" required>
+                <input id="image_url" name="image_url" value="{{ stat.image_url }}" type="text" class="validate"
+                    required>
                 <label for="image_url">Image URL</label>
             </div>
         </div>
+        <!-- Manufacturer input -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-circle prefix teal-text text-darken-4"></i>
-                <input id="manufacturer" name="manufacturer" value="{{ stat.manufacturer }}" type="text" class="validate" required>
+                <input id="manufacturer" name="manufacturer" value="{{ stat.manufacturer }}" type="text"
+                    class="validate" required>
                 <label for="manufacturer">Manufacturer</label>
             </div>
         </div>
+        <!-- Model input -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-car prefix teal-text text-darken-4"></i>
@@ -43,6 +51,7 @@
                 <label for="model">Model</label>
             </div>
         </div>
+        <!-- Engine size input -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-cogs prefix teal-text text-darken-4"></i>
@@ -50,20 +59,23 @@
                 <label for="engine">Engine Size</label>
             </div>
         </div>
+        <!-- Horsepower input -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-horse-head prefix teal-text text-darken-4"></i>
-                <input id="horsepower" name="horsepower" value="{{ stat.horsepower }}" type="text" class="validate" required>
+                <input id="horsepower" name="horsepower" value="{{ stat.horsepower }}" type="text" class="validate"
+                    required>
                 <label for="horsepower">Horsepower</label>
             </div>
         </div>
+        <!-- Submit and Cancel buttons -->
         <div class="row">
             <div class="col s12 center-align">
                 <button type="submit" class="btn-large teal darken-4 text-shadow">
-                    Edit Car 
+                    Edit Car
                 </button>
                 <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large red accent-4 text-shadow">
-                    Cancel 
+                    Cancel
                 </a>
             </div>
         </div>
