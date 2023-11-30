@@ -18,6 +18,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Error handler for 404 Not Found
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html'), 404
+
+
 # Home page and stats route
 @app.route("/")
 @app.route("/get_stats")
