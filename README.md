@@ -1,110 +1,154 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Car Hub: Unleash your ride, join the community!
 
-Welcome Arron Evans,
+<img src="">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## What is Car Hub
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Welcome to Car Hub, the ultimate destination for car enthusiasts! Car Hub is a platform designed for individuals passionate about their vehicles. With Car Hub, you have the power to Create, Read, Update, and Delete (CRUD) details about your beloved cars. By creating an account and engaging in user authentication, you unlock the full potential of our community. Share your automotive pride by showcasing your cars, explore the stunning rides of fellow enthusiasts, and immerse yourself in a vibrant car community. Car Hub is not just a platform; it's a haven where automotive aficionados come together to celebrate the love for cars. Join us on this exciting journey, and let's drive the passion for cars to new heights!
 
-## Gitpod Reminders
+## Project Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+At Car Hub, our mission is to create a dynamic and inclusive space for car enthusiasts worldwide. Our project goals revolve around fostering a vibrant community that shares, celebrates, and connects over the love of automobiles. Here are the key objectives we aim to achieve:
+* Empower Car Enthusiasts: Provide users with a seamless platform to Create, Read, Update, and Delete details about their cars, empowering them to curate their automotive experiences.
+* Build a Thriving Community: Cultivate a like-minded community where users can share their passion, insights, and experiences, creating meaningful connections with fellow enthusiasts.
+* User Authentication and Security: Implement robust user authentication to ensure a secure and personalized experience for our community members, safeguarding their profiles and interactions.
+* User-Friendly CRUD Functionality: Develop an intuitive and user-friendly interface for CRUD operations on car profiles, making it easy for users to showcase their vehicles with rich details and captivating images.
+* Responsive Design: Prioritize a responsive and visually appealing design to ensure an optimal user experience across various devices, making Car Hub accessible to enthusiasts anytime, anywhere.
 
-`python3 -m http.server`
+## User Goals
 
-A blue button should appear to click: _Make Public_,
+Car Hub is designed with our users in mind, aiming to provide an enriching and enjoyable experience for every car enthusiast. Here are the key user goals we strive to fulfill:
 
-Another blue button should appear to click: _Open Browser_.
+* Showcase Your Ride: Allow users to prominently display their cars by creating detailed profiles with captivating images, sharing the features that make each vehicle special.
+* Discover Diverse Car Collections: Provide a platform for users to explore a wide variety of cars from different makes, models, and eras, allowing them to discover and appreciate the rich diversity within the automotive world.
+* Personalized Car Management: Offer a user-friendly interface for managing their car profiles, allowing users to update details, add new cars to their collection, and easily maintain their automotive portfolio.
+* Secure and Personalized Experience: Implement robust user authentication and security measures to ensure a safe and personalized experience, where users can confidently share their passion without compromising their privacy.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Research
 
-A blue button should appear to click: _Make Public_,
+In regards to research I looked at several websites. The key takeaways were an easily navigated website, with the main component being how the cars are displayed.
 
-Another blue button should appear to click: _Open Browser_.
+| [Collecting Cars](https://collectingcars.com/) | [Auto Trader](https://www.autotrader.co.uk/) | [DK Engineering](https://www.dkeng.co.uk/) |
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Key Takeaways
 
-To log into the Heroku toolbelt CLI:
+* Intuitive and Effortless Navigation: Prioritize a user-friendly interface that allows visitors to navigate seamlessly through different sections of Car Hub, with a focus on simplicity and clarity.
+* Visual Emphasis: Highlight the visual appeal of cars by incorporating high-quality images and a clear, readable section of car stats.
+* Mobile Responsiveness: Ensure that Car Hub is accessible and functions smoothly across various devices, with special attention to mobile responsiveness to accommodate users on the go.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Navigation Bar
 
-------
+<img src="">
 
-## Release History
+## The Hub (home page)
+to include cards
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<img src="">
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Add Car Form
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<img src="">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Edit Car Form
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## User Profile
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<img src="">
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Log In and Register Pages
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Delete car modal
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<img src="">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## User Stories
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## User Story Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  |  |  |
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<details><summary>Screen Recording</summary>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<img src="">
 
-------
+</details>
 
-## FAQ about the uptime script
+## Future Features
 
-**Why have you added this script?**
+Additional features I plan to include are:
+* Like feature on the home page.
+* Comment feature on home page.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+# Design and Structure
 
-**How will this affect me?**
+## Structure
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The site is made up of eight pages.
+* Base.html: contains the html boiler plate which was used to extend onto the other pages. It contains the navigation bar and all the neccesary files to run the website.
+* Stats.html: is the main/home page. This is where all the user inputs are displayed in a uniform manor.
+* Profile.html: contains the same information as stats.html with the addition of the update and delete functions, which are prompted via the click of buttons.
+* edit_car and add_car.html: both contain the same form where the user can add information about their vehicles or update once added.
+* login and register.html: both pages have the same format and allow the user to register and login and logout once the user has created an account.
+* 404.html: is a page the user is directed to if they enter an incorrect url and it allows them to return to the home page via a "Click here" prompt.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Colors
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Teal:  In the context of Car Hub, teal serves as the primary color, reflecting a premium and elegant feel for car enthusiasts. The use of teal throughout the site aims to evoke a sense of luxury and excellence, enhancing the overall visual appeal.
+* White: In Car Hub, white is strategically incorporated within teal elements to provide a clean appearance. This combination enhances readability.
+* Red: In the context of Car Hub, red is specifically used for actions related to the deletion of files. This bold color choice serves to signify the irreversible nature of file deletion, acting as a visual cue to users that this action should be approached with caution.
 
-**So….?**
+### Languages Used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* [HTML](https://www.w3schools.com/html/html_intro.asp) Why I Used It: HTML serves as the foundation for structuring my web pages.
+* [CSS](https://www.w3schools.com/Css/) Why I Used It: CSS allows me to style and format the visual presentation of HTML elements.
+* [Javascript/Jquery](https://jquery.com/) Why I Used It: JavaScript is my go-to language for creating dynamic and interactive features on my web pages. Such as the modal and to initialize materialize.
+* [Jinja2](https://jinja.palletsprojects.com/en/2.10.x/) Why I Used It: Jinja, integrated with my Python web framework (Flask), serves as a templating engine.
+* [Python](https://www.python.org/) Why I Used It: Python, being a versatile and high-level programming language, is my backend powerhouse. It works in tandem with my web framework to handle server-side logic, manage routes, interact with databases, and coordinate the overall functionality of Car Hub.
 
-**Can I opt out?**
+### Tools
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* [Git](https://git-scm.com/)
+Used for version control via GitPod by using the terminal to Git and Push to GitHub.
+* [GitHub](https://github.com/)
+Used to store the project code after being created in GitPod / Git.
+* [Gitpod](https://www.gitpod.io/)
+Used to create, edit & preview the project's code.
+* [MongoDB](https://www.mongodb.com/)
+Used to create the collection which holds information on a non-relational database about users, stats and categories.
+* [Heroku](https://www.heroku.com/)
+Used to deploy the finished website.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+# Testing
 
-**Anything more?**
+## HTML Validation
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## CSS Validation
 
----
+## Javascript Validation
 
-Happy coding!
+## Python Validation
+
+## Responsiveness
+
+The site was tested on the following devices:
+* Asus Vivobook Book Pro 16"
+* Samsung S23 Ultra
+* Samsung S20
+* Acer Chromebook 14"
+* Google Developer tools. Utilizing all dimensions including the responsive option.
+
+## Deployment
+
+### Step by step guide to deploying to Heroku
+* Firstly I had to create a Heroku account.
+* 
+
+## Credits
