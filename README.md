@@ -40,32 +40,88 @@ In regards to research I looked at several websites. The key takeaways were an e
 
 ## Navigation Bar
 
-<img src="">
+* Site-Wide Navigation: The navigation bar maintains consistency across all pages, ensuring easy access to key sections throughout the entire site.
+* Navigation: For non-logged-in users, access is limited to the home page, login, and registration pages.
+Once logged in, users gain additional access to features such as adding a car, managing their personal profile, and the option to log out.
+* Placement/Responsive: The navigation bar is strategically positioned at the top of the page, maximizing visibility. On smaller screen sizes, it transforms into a collapsible navbar, as depicted in the image three:
+
+<img src="static/images/navbar.png">
+<img src="static/images/navbar3.png">
+
+### Small screen sizes
+<img src="static/images/navbar2.png">
 
 ## The Hub (home page)
-to include cards
 
-<img src="">
+* The Hub: This is where the users cars are showcased. Images, car stats and the user who added the car are all visible here.
+* Cards: The information is stored in cards with an emphasis on user images to promote their rides. This is the first page users are greeted with.
+
+<img src="static/images/homepage.png">
 
 ## Add Car Form
 
-<img src="">
+* The Add Car Form is thoughtfully organized, guiding users through a systematic order to effortlessly input all relevant information about their vehicles.
+* Required fields must be filled in, and the form employs dynamic validation. Incomplete fields are highlighted in red, guiding users to provide necessary information. As each field is successfully filled, it transforms to a reassuring green.
+* To ensure accuracy, only specific keys and numerical values are allowed in certain fields. This prevents input errors and streamlines the data entry process.
+* The form provides real-time feedback, alerting users about incomplete or incorrectly formatted entries. This user-friendly approach enhances the overall experience, making the form intuitive and responsive.
+* After successfully adding a car, users are seamlessly redirected to the home page. A flash message promptly appears, confirming the successful addition of the car. 
+
+<img src="static/images/addform.png">
+<img src="static/images/addform2.png">
+
+### Flash Message
+<img src="static/images/addform3.png">
 
 ## Edit Car Form
 
-<img src="">
+* The Edit Car Form intuitively displays the existing data of the selected car, allowing users to view and modify specific details.
+* Users have the flexibility to update any of the data inputs within the form. This feature is valuable for correcting errors, updating images, or refining statistical information.
+* A "Cancel" option is provided, directing users back to their profile without making any changes. This feature ensures a hassle-free experience for users who decide not to edit the car's information.
+* Upon clicking the "Edit Car" button, changes to the information are processed, and users receive instant confirmation through a flash message. 
+
+<img src="static/images/editform.png">
+
+### Flash Message
+<img src="static/images/editform2.png">
 
 ## User Profile
 
-<img src="">
+* The User Profile page prominently showcases the user's display name. Thus creating a personalized and welcoming experience.
+* This dedicated space is reserved solely for the current session user's vehicles. No other vehicles are displayed, ensuring a focused and private view of their automotive collection.
+* Users enjoy the convenience of managing their vehicles directly from the User Profile page. Edit and Delete buttons are readily accessible, allowing for seamless updates and removals.
+
+<img src="static/images/userprofile.png">
 
 ## Log In and Register Pages
 
-<img src="">
+* Both the Log In and Register pages share the same user-friendly form, streamlining the user experience and ensuring consistency across actions.
+* The form prompts users to input a username and password for authentication. Whether logging in or registering, this central form serves as the gateway to access Car Hub's features.
+* Upon logging in the user is directed to their profile where a welcome message greets them.
+* To enhance registration the user is flashed a "registration successful" message. Once registered they are immediately logged in and able to create, read, update and delete their personal records.
+* Enhancing user convenience, the password field includes an eye icon, allowing users to toggle visibility and view the inputted password. This feature ensures accuracy during the registration process and ease of use during login.
+
+### Log In
+<img src="static/images/login.png">
+
+### Flash Message
+<img src="static/images/login2.png">
+
+### Register
+<img src="static/images/register.png">
+
+### Flash Message
+<img src="static/images/register2.png">
+
+### Password Visibility
+<img src="static/images/password.png">
 
 ## Delete car modal
 
-<img src="">
+* Users encounter a step within the modal that prompts them to confirm the deletion action. This intentional pause allows users to reconsider their choice and mitigates the risk of unintentional data loss.
+* The modal features a red "Delete" button and a teal "Cancel" button. The color scheme aligns with the visual language of the application, maintaining consistency with other buttons and enhancing the overall user experience.
+
+
+<img src="static/images/modal.png">
 
 ## User Stories
 
