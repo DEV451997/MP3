@@ -148,7 +148,7 @@ Log In/Register/Log Out:
 
 <details><summary>Screen Recording</summary>
 
-<img src="">
+<img src="static/images/usergif.gif">
 
 </details>
 
@@ -158,7 +158,7 @@ Log In/Register/Log Out:
 
 <details><summary>Screen Recording</summary>
 
-<img src="">
+<img src="static/images/addcargif.gif">
 
 </details>
 
@@ -168,7 +168,7 @@ Log In/Register/Log Out:
 
 <details><summary>Screen Recording</summary>
 
-<img src="">
+<img src="static/images/editgif.gif">
 
 </details>
 
@@ -178,7 +178,7 @@ Log In/Register/Log Out:
 
 <details><summary>Screen Recording</summary>
 
-<img src="">
+<img src="static/images/deletegif.gif">
 
 </details>
 
@@ -188,7 +188,7 @@ Log In/Register/Log Out:
 
 <details><summary>Screen Recording</summary>
 
-<img src="">
+<img src="static/images/authenticationgif.gif">
 
 </details>
 
