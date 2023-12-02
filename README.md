@@ -125,17 +125,74 @@ Once logged in, users gain additional access to features such as adding a car, m
 
 ## User Stories
 
+Viewing Cars on The Hub/User Profile:
+* As a car enthusiast, I want to visit The Hub to explore and appreciate a diverse collection of cars contributed by other users. I also want to be able to visit my own personal page exclusively showing my cars.
+
+Adding a Car:
+* As a registered user, I want to add my own cars to The Hub, providing details and images to showcase my automotive pride to the community.
+
+Editing Car Details:
+* As a car owner, I want to edit the details of my listed cars on my profile, ensuring accuracy and keeping my automotive information up-to-date.
+
+Deleting a Car:
+* As a user, I want to have the ability to delete a car from my profile, but I expect a confirmation step to prevent accidental deletion.
+
+Log In/Register/Log Out:
+* As a potential user I want the ability to register for an account. Then be able to log in and out at my own discretion.
+
 ## User Story Testing
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  |  |  |
+| Main Hub/User Profile | I expect to be shown images and data from a variety of cars and users. | Upon loading the site I am greeted with an abundance of user vechicles and the option to navigate to my personal profile. |
 
 <details><summary>Screen Recording</summary>
 
 <img src="">
 
 </details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| Add a car | I expect to be able to add information regarding a vehicle I want shown in the database. | Once a user has registered/logged in. They are shown the option to add a car. Once navigated over to the add car page a form is shown where the user can input the relevant data from the fields shown. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| Edit a car | If I have information I want to update about my vehicle, I want the option to update the current information. | Upon navigating to the user profile. The user is shown an edit button for each vehicle. Upon pressing the button a form appears with all the current information where the user can change any number of fields. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| Delete a car | If I no longer want the information of a current car. I want the option to delete the data. | On the user profile page the option to delete a car is shown. Defensive programming has been put in place to ensure accidental deletion does not occur. A modal will appear once the delete button is pressed and the modal with confirm with the user before the data is removed. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| User Authentication | I expect to have the abilty to register, login and logout at my own discretion.  | The user will be displayed the home screen. Along the navbar the options for Home, Login and Register are available. Upon registering the user if shown a flash message and immediately logged in. Now the account has been created the user can login and out at their own discretion. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+
 
 ## Future Features
 
