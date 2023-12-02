@@ -2,6 +2,28 @@
 
 <img src="">
 
+## Development Life Cycle
+
+### Project Requirements
+
+In developing my project, I embraced a stack of technologies tailored to create a robust web application. The main technologies at the core of this project are HTML, CSS, JavaScript, and Python with Flask. The database used is MongoDB.
+
+### Data Handling
+
+A cornerstone of this project is the implementation of a database-backed Flask web application. The focus is on providing users with the ability to store and manipulate data records.
+
+### Database Structure
+
+Conscious effort was invested in designing a database structure tailored to the project's domain. Special attention was given to establishing meaningful relationships between records of different entities, ensuring optimal data organization.
+
+### User Functionality
+
+User-centric features are a priority, and the project incorporates full CRUD functionality. Users can seamlessly create, locate, display, edit, and delete records through an intuitive interface.
+
+### Structure
+
+A well-structured layout is integral to the project's design. The incorporation of a main navigation menu and a thoughtfully organized layout enhances user navigation. Materialize was used to implement this.
+
 ## What is Car Hub
 
 Welcome to Car Hub, the ultimate destination for car enthusiasts! Car Hub is a platform designed for individuals passionate about their vehicles. With Car Hub, you have the power to Create, Read, Update, and Delete (CRUD) details about your beloved cars. By creating an account and engaging in user authentication, you unlock the full potential of our community. Share your automotive pride by showcasing your cars, explore the stunning rides of fellow enthusiasts, and immerse yourself in a vibrant car community. Car Hub is not just a platform; it's a haven where automotive aficionados come together to celebrate the love for cars. Join us on this exciting journey, and let's drive the passion for cars to new heights!
@@ -248,20 +270,28 @@ Used to deploy the finished website.
 * Below is attached an image showing the issue lies with the jinja2 templating language.
 <details><summary>HTML</summary><img src="static/images/html check.png"></details>
 
+* In regards to HTML I had to make sure I was using Jinja2 correctly.
+
 ## CSS Validation
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/) The CSS page was run through a CSS Validator.
 <details><summary>Stylesheet</summary><img src="static/images/css.png"></details>
+
+* I encountered no errors when it came to CSS as very small amounts were used.
 
 ## Javascript Validation
 
 [Javascript Validator](https://jshint.com/) The Javascript page was run through jshint.
 <details><summary>JS</summary><img src="static/images/jshint.png"></details>
 
+* I encountered no errors when it came to Jquery as most of it was available via Materialize.
+
 ## Python Validation
 
 [Python Validator](https://pep8ci.herokuapp.com/) The Python page was run through pep8 validator.
 <details><summary>Python</summary><img src="static/images/pep8.png"></details>
+
+* In regards to Python the main issues I encoutered was making sure I used proper indentation. The pep8 validator helped solve these issues.
 
 ## Responsiveness
 
