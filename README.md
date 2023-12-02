@@ -1,6 +1,6 @@
 # Car Hub: Unleash your ride, join the community!
 
-<img src="">
+<img src="static/images/main.png">
 
 ## Development Life Cycle
 
@@ -214,8 +214,6 @@ Log In/Register/Log Out:
 
 </details>
 
-
-
 ## Future Features
 
 Additional features I plan to include are:
@@ -240,6 +238,9 @@ The site is made up of eight pages.
 * White: In Car Hub, white is strategically incorporated within teal elements to provide a clean appearance. This combination enhances readability.
 * Red: In the context of Car Hub, red is specifically used for actions related to the deletion of files. This bold color choice serves to signify the irreversible nature of file deletion, acting as a visual cue to users that this action should be approached with caution.
 
+<img src="static/images/teal.png">
+<img src="static/images/red.png">
+
 ### Languages Used
 
 * [HTML](https://www.w3schools.com/html/html_intro.asp) Why I Used It: HTML serves as the foundation for structuring my web pages.
@@ -262,6 +263,8 @@ Used to create the collection which holds information on a non-relational databa
 Used to deploy the finished website.
 
 # Testing
+
+Manual testing took place on the deployed site. Making sure CRUD funtionality along with User Authentication functioned correctly. User Stories displays many of the functions being tested.
 
 ## HTML Validation
 
@@ -307,7 +310,14 @@ The site was tested on the following devices:
 ## Deployment
 
 ### Step by step guide to deploying to Heroku
-* Firstly I had to create a Heroku account.
-* 
+* I initiated the deployment process by creating a Heroku account.
+* Prior to deployment, I prepared the project by creating essential configuration files. The requirements.txt file documented the project's dependencies, ensuring a seamless setup on Heroku. Additionally, the Procfile was crafted to specify the commands Heroku should execute to run the application.
+* Navigating to the Heroku dashboard, I created a new application to serve as the deployment target.
+* With the Heroku app in place, I connected it to my GitHub repository. This integration facilitated a streamlined deployment workflow, enabling automatic updates upon code changes.
+* In the app's settings, I accessed the "Config Vars" section to securely manage environment variables. This step involved inputting sensitive information, such as API keys or database credentials, ensuring the secure functioning of the deployed application.
+* I further enhanced the deployment process by configuring automatic deploys directly from my GitHub repository, by pushing requirements.txt and the Procfile.
+* Each subsequent push to the branch, the application on Heroku updated, maintaining synchronization with the latest codebase.
 
 ## Credits
+
+Credit has to be given to Code Institute for giving me to knowledge to produce such an application. Also credit to my mentor who helped when it came to the database model. The project was helped along by the Task Manager application, giving me the knowledge to create the CRUD functions. 
