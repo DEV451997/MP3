@@ -243,11 +243,25 @@ Used to deploy the finished website.
 
 ## HTML Validation
 
+[HTML Validator](https://validator.w3.org/) The HTML pages were run through a HTML Validator.
+* Inputting via direct url provided error messages to the site not being found. 
+* Below is attached an image showing the issue lies with the jinja2 templating language.
+<details><summary>HTML</summary><img src="static/images/html check.png"></details>
+
 ## CSS Validation
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/) The CSS page was run through a CSS Validator.
+<details><summary>Stylesheet</summary><img src="static/images/css.png"></details>
 
 ## Javascript Validation
 
+[Javascript Validator](https://jshint.com/) The Javascript page was run through jshint.
+<details><summary>JS</summary><img src="static/images/jshint.png"></details>
+
 ## Python Validation
+
+[Python Validator](https://pep8ci.herokuapp.com/) The Python page was run through pep8 validator.
+<details><summary>Python</summary><img src="static/images/pep8.png"></details>
 
 ## Responsiveness
 
@@ -257,6 +271,8 @@ The site was tested on the following devices:
 * Samsung S20
 * Acer Chromebook 14"
 * Google Developer tools. Utilizing all dimensions including the responsive option.
+
+<details><summary>Dev Tools</summary><img src="static/images/responsivegif.gif"></details>
 
 ## Deployment
 
